@@ -1,0 +1,14 @@
+body {
+    margin:50px 0px;
+    padding:0px;
+}
+
+.panel {
+    width:549px;
+    min-width: 400px;
+    min-height: 394px;
+    margin:0 auto;
+}
+.panel-heading{
+   text-align: center;
+}
