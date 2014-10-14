@@ -22,7 +22,11 @@ function validateForm(e){
     validarNya(nombre, apellido);
     validarNumeros(legajo, edad);
     validarPclave(pClave);
-    mostrarErrores();
+    var hayError = mostrarErrores();
+    if(!hayError){
+        $("#form_alta").submit();
+    }
+    //return hayError;
 }   
 
 
@@ -85,16 +89,19 @@ function validarPclave (pClave) {
 
 
 function mostrarErrores () {
+    var hayError = false;
     for (var i = 0; i < camposValidos.length; i++) {
         if (!camposValidos[i]) {
             $('#msg'+i).show();
             $(".entrada"+i).addClass("has-error");
+            hayError = true;
         }
         else{
             $('#msg'+i).hide();
             $(".entrada"+i).removeClass("has-error");            
         }
-    };
+    }
+    return hayError;
 }
 
 function limpiarErrores () {

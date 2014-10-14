@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.css" media="screen">
+    <!--link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap-glyphicons.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="../statics/css/distribuidos.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../statics/css/distribuidos.css" media="screen"-->
+    <link rel="stylesheet" type="text/css" href="../Distribuidos/statics/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../Distribuidos/statics/css/bootstrap-glyphicons.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../Distribuidos/statics/css/distribuidos.css" media="screen">
 
     <title>Alta usuario</title>
 </head>
@@ -12,12 +15,11 @@
     <div class="panel panel-primary content">
         <div class="panel-heading"><strong>Alta de usuario</strong></div>
         <div class="panel-body">
-            <form class="form-horizontal" role="form" name="form_alta" id="form_alta" method="POST" action="../../cgi-bin/ej4.py" >
-            <!--form class="form-horizontal" role="form" id="form_alta" method="POST" action="http://foo.com" -->
+            <form class="form-horizontal" role="form" name="form_data" id="form_alta" method="GET" action="/cgi-bin/ej4.py" >
                 <div class="form-group entrada0">
                     <label class="col-xs-3" id="Nombre">Nombre: </label>
                     <div class="col-xs-9">
-                        <input type="text" class="form-control " name="nombre" id="nombre" value="pepito" placeholder="Ingrese su nombre">
+                        <input type="text" class="form-control " name="nombre" id="nombre" placeholder="Ingrese su nombre">
                     </div>
                 </div>
                 <div class="form-group entrada1">
@@ -59,7 +61,7 @@
                     </a>
                 </div>
                 <div id="boton_alta" class="col-xs-6 form-group pull-right">
-                    <button class="btn btn-success submit pull-right">
+                    <button type="submit" class="btn btn-success submit pull-right">
                             <span class="glyphicon glyphicon-floppy-disk"></span> Guardar 
                     </button>
                 </div>
@@ -67,9 +69,13 @@
         </div>
     </div>
 
-    <script src="../statics/js/jquery-1.11.0.min.js"></script> 
+    <!--script src="../statics/js/jquery-1.11.0.min.js"></script> 
     <script src="../statics/js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="../statics/js/validaciones.js"></script>
+    <script src="../statics/js/validaciones.js"></script-->
+
+    <script src="../Distribuidos/statics/js/jquery-1.11.0.min.js"></script> 
+    <script src="../Distribuidos/statics/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../Distribuidos/statics/js/validaciones.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function(e){
