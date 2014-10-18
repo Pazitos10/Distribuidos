@@ -2,9 +2,11 @@
 # -*- coding: utf-8 -*-
 
 from urlparse import urlparse, parse_qs
-import cgi
+import cgi,cgitb
 import os
 import json
+import Cookie
+#cgitb.enable()
 form = cgi.FieldStorage()
 NOMBRE_ARCH = "alumnos.txt"
 
@@ -18,9 +20,9 @@ def convert2Dict(json_string):
 
 def main():
     parametros = parsear(os.getenv("QUERY_STRING"))
-    limpiar(parametros)
-    guardar(parametros)
-    salida(parametros)
+    alumno = limpiar(parametros)
+    guardar(alumno)
+    salida(alumno)
 
 def buscar(alumno):
     archi=open(NOMBRE_ARCH,'r')
@@ -38,27 +40,43 @@ def guardar(alumno):
     archi.close()
 
 def parsear(query):
+    '''
+        Retorna un diccionario con los valores del query string.
+        Los valores del diccionario son una lista.
+    '''
     return parse_qs(query)
 
 
-def limpiar(parametros):
-    for k,v in parametros.iteritems():
-        parametros[k] = parametros[k][0]
+def limpiar(diccionario_qs):
+    '''
+        parse_qs devuelve un diccionario con la siguiente forma: 
+        {'apellido': ['Oporto'], 'nombre': ['Alberto'], 'pClave': ['1234']}
+        limpiar, devuelve un diccionario asi:
+        {'apellido': 'Oporto', 'nombre': 'Alberto', 'pClave': '1234'}
+    '''
+    result = diccionario_qs.copy()
+    for k,v in diccionario_qs.iteritems():
+        result[k] = diccionario_qs[k][0]
+    return result
 
 def salida(parametros):
+    cookie = Cookie.SimpleCookie()
+    arch_salida = '/var/www/html/base.html'
+    if parametros != None:
+        #arch_salida = '/var/www/Distribuidos/html/ok.html'
+        cookie['messages'] = 'true'
+        cookie['type_msg'] = 'ok'
+    else:
+        #arch_salida = '/var/www/Distribuidos/html/error.html'
+        cookie['messages'] = 'false'
+        cookie['type_msg'] = 'error'
+
+    print cookie
     print "Content-type:text/html\r\n\r\n"
     print ""
-    print "<html>"
-    print "<head>"
-    print "<title>Mostrando datos</title>"
-    print "</head>"
-    print "<body>"
-    print "<form>"
-    print "<p>Mostrando datos</p>"
-    print "<h1>Se guardo con exito: %s</h1>" % (parametros)
-    print "</form>"
-    print "</body>"
-    print "</html>"
+    print "<meta http-equiv=\"refresh\" content=\"5;url=../html/base.html\" />" #muestra el mensaje durante 5 segundos y redirige
+    print open(arch_salida).read()
+
 
 if __name__ == '__main__':
     main()

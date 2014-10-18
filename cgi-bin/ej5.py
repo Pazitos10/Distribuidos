@@ -4,6 +4,8 @@
 from urlparse import urlparse, parse_qs
 import os
 import json
+import Cookie
+
 NOMBRE_ARCH = "alumnos.txt"
 
 
@@ -19,8 +21,11 @@ def main():
     alumno = parsear(os.getenv("QUERY_STRING"))
     limpiar(alumno)
     alumno, pos = buscar(alumno)
+    # Instantiate a SimpleCookie object
+    cookie = Cookie.SimpleCookie()
+    cookie['line_number'] = pos
     #guardar(parametros)
-    salida(alumno)
+    salida(cookie, alumno)
 
 def buscar(alumno):
     archi=open(NOMBRE_ARCH,'r')
@@ -45,18 +50,22 @@ def parsear(query):
 
 
 def limpiar(parametros):
+    '''
+        Elimina los \n de los atributos del diccionario
+    '''
     for k,v in parametros.iteritems():
         parametros[k] = parametros[k][0]
 
 
-def salida(alumno):
+def salida(cookie, alumno):
+    print cookie
     print "Content-type:text/html\r\n\r\n"
     print
     #print (open('/var/www/Distribuidos/html/alta2.html').read()).format(**alumno)
     if alumno["sexo"] == "Masculino":
-        print (open('/var/www/Distribuidos/html/alta2.html').read()) % (alumno["nombre"],alumno["apellido"],alumno["nroLegajo"],"selected","",alumno["edad"],alumno["pClave"])
+        print (open('/var/www/html/alta2.html').read()) % (alumno["nombre"],alumno["apellido"],alumno["nroLegajo"],"selected","",alumno["edad"],alumno["pClave"])
     else:
-        print (open('/var/www/Distribuidos/html/alta2.html').read()) % (alumno["nombre"],alumno["apellido"],alumno["nroLegajo"],"","selected",alumno["edad"],alumno["pClave"])
+        print (open('/var/www/html/alta2.html').read()) % (alumno["nombre"],alumno["apellido"],alumno["nroLegajo"],"","selected",alumno["edad"],alumno["pClave"])
 
 
 

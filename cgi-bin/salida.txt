@@ -1,0 +1,2 @@
+jasgfhkasgfhsagfka{'edad': '21', 'apellido': 'Pazos', 'pClave': '1234', 'nroLegajo': '5454', 'sexo': 'Masculino', 'nombre': 'Bruno'}
+{'edad': '25', 'apellido': 'Perez', 'pClave': '1234', 'nroLegajo': '5432', 'sexo': 'Femenino', 'nombre': 'Maria'}

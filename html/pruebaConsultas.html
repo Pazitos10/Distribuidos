@@ -1,0 +1,52 @@
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Consulta</strong></div>
+<div class="panel-body">
+    <form class="form-inline" name="form-consulta" id="form-consulta" role="form" method="GET" action="../../cgi-bin/ej8.py" >
+        <div class="form-group" id="select-filtro">
+            <label for=""><span>Filtro: </span></label>
+            <select class="form-control " name="search-attr" id="search-attr">
+                <option value="*">*</option>
+                <option value="Nombre">Nombre</option>
+                <option value="Apellido">Apellido</option>
+                <option value="Sexo">Sexo</option>
+                <option value="Edad">Edad</option>
+                <option value="NroLegajo">Nro Legajo</option>
+            </select>
+        </div>
+        <div class="form-group" id="campo-valor">
+            <div id="entrada-normal" class="entrada1">
+                <label id="nombre-campo" for=""><span>Valor: </span></label>
+                <input class="form-control" id="valor-busqueda" name="valor-busqueda" disabled type="text">
+            </div>
+            <div id="entrada-numeros">
+                <div class="entrada2">
+                    <label id="nombre-campo" for=""><span>Desde: </span></label>
+                    <input class="form-control" id="valor-busqueda-1" type="text">
+                </div>
+                <br>
+                <div class="entrada3">
+                    <label for=""><span>Hasta: </span></label>
+                    <input class="form-control" id="valor-busqueda-2" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="boton">
+            <button type="submit" class="btn btn-success pull-right" id="busqueda"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            <br><br>
+            <div class="form-group" id="checkbox">
+                <span><label for="">Rango:</label></span><br>
+                <input type="checkbox" id="chk-rango">
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+<script type="text/javascript">
+        $(document).ready(function(){
+            filtrarTodo();
+            $('#search-attr').change(verificaCampos);
+        });
+
+        $('#busqueda').click(validarConsulta);
+        $('#chk-rango').click(verificaRango);
+</script>

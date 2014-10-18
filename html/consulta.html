@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta</title>
+  <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../statics/css/bootstrap-glyphicons.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../statics/css/distribuidos.css" media="screen">
+
+    <script src="../statics/js/jquery-1.11.0.min.js"></script> 
+    <script src="../statics/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../statics/js/jquery.cookie.js"></script>
+    <script src="../statics/js/bootstrap.js"></script> 
+    <script src="../statics/js/cargaForms.js"></script>
+    <script src="../statics/js/mensajes.js"></script>
+    <script src="../statics/js/validaciones.js"></script>
+    <script src="../statics/js/consultas.js"></script>
+</head>
+<body>
+  <div class="panel panel-primary">
+    <div class="panel-heading"><strong>Consulta</strong></div>
+    <div class="panel-body">
+      <form class="form-inline" name="form-consulta" role="form" method="GET" action="">
+        <div class="form-group" id="select-filtro">
+            <label for=""><span>Filtro: </span></label>
+            <select class="form-control " name="search-attr" id="search-attr">
+                <option value="*">*</option>
+                <option value="Nombre">Nombre</option>
+                <option value="Apellido">Apellido</option>
+                <option value="Sexo">Sexo</option>
+                <option value="Edad">Edad</option>
+                <option value="NroLegajo">Nro Legajo</option>
+            </select>
+        </div>
+        <div class="form-group" id="campo-valor">
+            <div id="entrada-normal">
+                <label id="nombre-campo" for=""><span>Valor: </span></label>
+                <input class="form-control" id="valor-busqueda" name="valor-busqueda-0" disabled type="text">
+            </div>
+            <div id="entrada-numeros">
+                <label id="nombre-campo" for=""><span>Desde: </span></label>
+                <input class="form-control" name="valor-busqueda-1" id="valor-busqueda-1" type="text">
+                <br>
+                <label for=""><span>Hasta: </span></label>
+                <input class="form-control" id="valor-busqueda-2" name="valor-busqueda-2" type="text">
+            </div>
+        </div>
+        <div class="form-group" id="boton">
+            <button type="submit" class="btn btn-success pull-right"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+            <br><br>
+            <div class="form-group" id="checkbox">
+                <span><label for="">Rango:</label></span><br>
+                <input name="chk-rango" type="checkbox" id="chk-rango">
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+        $(document).ready(function(){
+            filtrarTodo();
+            $('#search-attr').change(verificaCampos);
+        });
+        $('#chk-rango').click(verificaRango);
+</script>
+</html>

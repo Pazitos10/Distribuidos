@@ -20,13 +20,14 @@ function validateForm(e){
 
     limpiarErrores();
     validarNya(nombre, apellido);
-    validarNumeros(legajo, edad);
+    if (($('#edad').length > 0) && ($('#nroLegajo').length > 0))
+        validarNumeros(legajo, edad);
     validarPclave(pClave);
     var hayError = mostrarErrores();
     if(!hayError){
         $("#form_alta").submit();
     }
-    //return hayError;
+    
 }   
 
 
@@ -69,7 +70,7 @@ function validarNumeros (legajo,edad ) {
     }
 
     if(numeroReg.test(edad)){
-        if(edad.length < 1 || edad.length > 2){
+        if(edad.length < 1 || edad.length > 2 || Number(edad) < 0){
             $('#edad').after(inputMessage[3]);
             camposValidos[3] = false;
         }
@@ -109,5 +110,5 @@ function limpiarErrores () {
         $('#msg'+i).hide();
         $(".entrada"+i).removeClass("has-error");
         camposValidos[i] = true;
-    };   
+    };
 }
