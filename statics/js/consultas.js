@@ -31,6 +31,7 @@ function verificaCampos (e) {
 //Settings Css 
 function filtrarTodo () { 
     resetValorBusqueda();
+    quitarMensajesError();
     $('#entrada-normal').hide();
     $('#entrada-numeros').hide();
     $('#checkbox').hide();
@@ -41,6 +42,7 @@ function filtrarTodo () {
 
 function filtraNYA (valorSelect) { 
     resetValorBusqueda();
+    quitarMensajesError();
     $('#entrada-normal').show();
     $('#entrada-numeros').hide();
     $('#checkbox').hide();
@@ -54,6 +56,7 @@ function filtraNYA (valorSelect) {
 }
 
 function filtrarPorSexo(){
+    quitarMensajesError();
     $('#entrada-normal').show();
     $('#entrada-numeros').hide();
     $('#checkbox').hide();
@@ -70,6 +73,7 @@ function filtrarPorSexo(){
 
 function filtrarNum(valor){
     resetValorBusqueda();
+    quitarMensajesError();
     $('#entrada-normal').hide();
     $('#entrada-numeros').show();
     $('#chk-rango').removeAttr('disabled');
@@ -86,7 +90,7 @@ function filtrarNum(valor){
 
 function verificaRango(){
 //Verifica si se ha habilitado la opcion de buscar por rango y habilita el 2do input
-
+    quitarMensajesError();
     if ($('#chk-rango').prop('checked')){
         $('#valor-busqueda-2').removeAttr('disabled');
     }
@@ -106,7 +110,7 @@ function validarConsulta (e) {
 
     var nombreReg = /^[A-Za-z]+$/;
     var numeroReg =  /^[0-9]+$/;
-    var mensaje = '<span class="help-block" id="msg"> Por favor, ingrese un valor válido </span>';
+    var mensaje = '<span class="help-block msg"> Por favor, ingrese un valor válido </span>';
     var hayError;
     var valorSelect = $('#search-attr').val();
 
@@ -128,19 +132,20 @@ function validarConsulta (e) {
     }
 
 
-    // if (!hayError){
-    //     $('#form-consulta').submit();
-    // }
-    $('#form-consulta').submit();
+    if (!hayError){
+        $('#form-consulta').submit();
+    }
+    //$('#form-consulta').submit();
 
 }
 
 
 function quitarMensajesError () {
+//Elimina los mensajes de error presentes en html
     $('.entrada1').removeClass('has-error');
     $('.entrada2').removeClass('has-error');
     $('.entrada3').removeClass('has-error');
-    $('#msg').hide();
+    $('.msg').remove();
 }
 
 
@@ -164,6 +169,7 @@ function validarTexto (expresion,valorInput,nombreId,mensaje) {
 function validarNroLegajo (expresion,mensaje) {
     var nroLegajo_1 = $(':input[name="nroLegajo-1"]').val();
     var legajos = [nroLegajo_1];
+    var result = false;
 
     var esPorRango = $('#chk-rango').prop('checked');
     if (esPorRango){
@@ -174,25 +180,26 @@ function validarNroLegajo (expresion,mensaje) {
     for (var i = 1; i < (legajos.length + 1); i++) {
         if(expresion.test(legajos[1])){
             if(legajos[1].length > 4 ){
-                $('.entrada'+i).addClass('has-error');
+                $('.entrada'+(i+1)).addClass('has-error');
                 $(':input[name="nroLegajo-'+i+'"]').after(mensaje);
-                return true;
+                result = true;
             } 
         }
         else{
-            $('.entrada'+i).addClass('has-error');
+            $('.entrada'+(i+1)).addClass('has-error');
             $(':input[name="nroLegajo-'+i+'"]').after(mensaje);
-            return true;
+            result = true;
         }
     }
 
-    return false;
+    return result;
 
 }
 
 function validarEdad (expresion,mensaje) {
     var edad_1 = $(':input[name="edad-1"]').val();
     var edades = [edad_1];
+    var result = false;
 
     var esPorRango = $('#chk-rango').prop('checked');
     if (esPorRango){
@@ -203,16 +210,16 @@ function validarEdad (expresion,mensaje) {
     for (var i = 1; i < (edades.length +1); i++) {
         if(expresion.test(edades[i])){
             if(edades[i].length < 1 || edades[i].length > 2 || Number(edades[i]) < 0){
+                $('.entrada'+(i+1)).addClass('has-error');
                 $(':input[name="edad-'+i+'"]').after(mensaje);
-                $('.entrada'+i).addClass('has-error');
-                return true;
+                result = true;
             }
         }
         else{
+            $('.entrada'+(i+1)).addClass('has-error');
             $(':input[name="edad-'+i+'"]').after(mensaje);
-            $('.entrada'+i).addClass('has-error');
-            return true;
+            result = true;
         }
     }
-    return false;
+    return result;
 }
