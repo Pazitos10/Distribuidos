@@ -24,9 +24,10 @@ function validateForm(e){
         validarNumeros(legajo, edad);
     validarPclave(pClave);
     var hayError = mostrarErrores();
-    if(!hayError){
-        $("#form_alta").submit();
-    }
+    return hayError;
+    // if(!hayError){
+    //     $("#form_alta").submit();
+    // }
     
 }   
 
@@ -70,7 +71,7 @@ function validarNumeros (legajo,edad ) {
     }
 
     if(numeroReg.test(edad)){
-        if(edad.length < 1 || edad.length > 2 || Number(edad) < 0){
+        if(edad.length < 1 || edad.length > 2 || Number(edad) <= 0){
             $('#edad').after(inputMessage[3]);
             camposValidos[3] = false;
         }

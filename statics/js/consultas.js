@@ -135,7 +135,6 @@ function validarConsulta (e) {
     if (!hayError){
         $('#form-consulta').submit();
     }
-    //$('#form-consulta').submit();
 
 }
 
@@ -178,8 +177,8 @@ function validarNroLegajo (expresion,mensaje) {
     }
 
     for (var i = 1; i < (legajos.length + 1); i++) {
-        if(expresion.test(legajos[1])){
-            if(legajos[1].length > 4 ){
+        if(expresion.test(legajos[i-1])){
+            if(legajos[i-1].length > 4 ){
                 $('.entrada'+(i+1)).addClass('has-error');
                 $(':input[name="nroLegajo-'+i+'"]').after(mensaje);
                 result = true;
@@ -208,8 +207,8 @@ function validarEdad (expresion,mensaje) {
     }
 
     for (var i = 1; i < (edades.length +1); i++) {
-        if(expresion.test(edades[i])){
-            if(edades[i].length < 1 || edades[i].length > 2 || Number(edades[i]) < 0){
+        if(expresion.test(edades[i-1])){
+            if(edades[i-1].length < 1 || edades[i-1].length > 2 || Number(edades[i-1]) < 0){
                 $('.entrada'+(i+1)).addClass('has-error');
                 $(':input[name="edad-'+i+'"]').after(mensaje);
                 result = true;

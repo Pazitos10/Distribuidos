@@ -28,7 +28,7 @@ def main():
         cookie.load(cookie_string)
         # Obtenemos el numero de linea en el cual se encuentra el alumno
         nro_linea = int(cookie['line_number'].value)
-       
+
         #Llamar a actualizar_linea con el nro de linea y el nuevo contenido:
         actualizar_linea(nro_linea, alumno)
         # Cargamos la cookie con los valores necesarios para mostrar el mensaje de exito.

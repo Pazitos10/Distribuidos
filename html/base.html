@@ -41,18 +41,34 @@
               <ul class="dropdown-menu" role="menu">
                 <!-- <li><a href="altaUsuario.html">Alta usuario</a></li> -->
                 <li><a onclick="cargarAlta()">Alta alumno</a></li>
-                <li><a onclick="cargarModifSD()">Modificacion alumno</a></li>
+                <li><a onclick="cargarModif()">Modificacion alumno</a></li>
                 <li class="divider"></li>
                 <li><a onclick="cargarFormConsultas()">Consultas</a></li>
               </ul>
             </li>
           </ul>
+          <ul class="nav navbar-nav pull-right"><li><a onclick="borrarCookie()">Borrar cookies</a></li></ul>  
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
       <div class="col-sm-6 col-md-6 mensajes"></div><!-- /.mensajes -->
-      <div class="formulario"></div><!-- /.formulario -->
+      <div class="formulario">
+        <div id="descripcion">
+          <div id="titulo" style="text-align:center">
+            <h4><strong>Universidad Nacional de la Patagonia San Juan Bosco - Facultad de Ingeniería - Sede Trelew - Sistemas Distribuidos 2014</strong></h4>
+          </div>
+          <div id="logo" class="media">
+            <img src="../statics/img/logo.jpg" style="height:300px;width:250px;margin-left: 29%;">
+          </div>
+          <br>
+          <div id="miembros">
+            <h4><strong>Profesor Adjunto</strong>: Mg. Ing. Ricardo Antonio López</h4>
+            <h4><strong>Jefe de Trabajos Prácticos</strong>: Lic. Cristian Javier Parise</h4>
+            <h4><strong>Integrantes</strong>: Morales, Leonardo - Gonzalez, Marcos - Pazos, Bruno</h4>
+          </div>
+        </div>
+      </div><!-- /.formulario -->
     </div>
 
 </body>

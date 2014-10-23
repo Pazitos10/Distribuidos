@@ -1,0 +1,4 @@
+b565fdb6883880de479102a48a14a3f4={u'edad': u'22', u'apellido': u'Pazos', u'pClave': u'1234', u'nroLegajo': u'5454', u'sexo': u'Masculino', u'nombre': u'Bruno'}
+5f6f80a3e294418d731a3be7337b13a1={u'edad': u'22', u'apellido': u'Pazos', u'pClave': u'1234', u'nroLegajo': u'5454', u'sexo': u'Masculino', u'nombre': u'Bruno'}
+21038f7ae3966a0758e84c292ded6152={u'edad': u'22', u'apellido': u'Pazos', u'pClave': u'1234', u'nroLegajo': u'5454', u'sexo': u'Masculino', u'nombre': u'Bruno'}
+b966a39f2e9f6838f0de1f259343c013={u'edad': u'22', u'apellido': u'Pazos', u'pClave': u'1234', u'nroLegajo': u'5454', u'sexo': u'Masculino', u'nombre': u'Bruno'}

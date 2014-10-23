@@ -35,13 +35,15 @@
     </div>
 </div>
 
-<!-- <script src="../statics/js/jquery-1.11.0.min.js"></script> 
-<script src="../statics/js/jquery-migrate-1.2.1.min.js"></script>
-<script src="../statics/js/validaciones.js"></script> -->
-
 <script type="text/javascript">
     $(document).ready(function(e){
-        $('.submit').click(validateForm);
+        $('.submit').bind("click",function(e){
+            var hayErrores = validateForm(e);
+            if (!hayErrores){
+                //crearCookie(); 
+                $("#form_alta").submit();//submit if form has no errors
+            }
+        });
     });
 
 </script>

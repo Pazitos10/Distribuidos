@@ -1,0 +1,64 @@
+<div class="panel panel-primary content">
+<div class="panel-heading"><strong>Modificar alumno</strong></div>
+<div class="panel-body">
+    <form class="form-horizontal" role="form" name="form_data" id="form_alta" method="GET" action="/cgi-bin/ej5b.py" >
+        <div class="form-group entrada0">
+            <label class="col-xs-3" id="Nombre">Nombre: </label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control " name="nombre" value="%s" id="nombre" readonly placeholder="Ingrese su nombre">
+            </div>
+        </div>
+        <div class="form-group entrada1">
+            <label class="col-xs-3" id="Apellido">Apellido: </label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control " name="apellido" value="%s" id="apellido" readonly placeholder="Ingrese su apellido">
+            </div>
+        </div>
+        <div class="form-group entrada2">
+            <label class="col-xs-3" id="Nro_legajo">Nro. Legajo: </label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control " name="nroLegajo" value="%s" id="nroLegajo" placeholder="Ingrese su nro de legajo">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-xs-3">Sexo: </label>
+            <div class="col-xs-9">
+                <select id="sexo" class="form-control" name="sexo">
+                    <option %s >Masculino</option>
+                    <option %s >Femenino</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group entrada3">
+            <label class="col-xs-3" id="Edad">Edad: </label>
+            <div class="col-xs-9">
+                <input type="text" class="form-control " name="edad" value="%s" id="edad" placeholder="Ingrese su edad">
+            </div>
+        </div>
+        <div class="form-group entrada4">
+            <label class="col-xs-3" id="PalabraClave">Palabra Clave: </label>
+            <div class="col-xs-9">
+                <input type="password" class="form-control  col-xs-3" name="pClave" value="%s" id="pClave" readonly placeholder="Ingrese su Password">
+            </div>
+        </div>
+        <div id="boton_alta" class="col-xs-6 form-group pull-left">
+            <a class="btn btn-success" href="base.html">
+                    <span class="glyphicon glyphicon-chevron-left"></span> Atras
+            </a>
+        </div>
+        <div id="boton_alta" class="col-xs-6 form-group pull-right">
+            <button type="submit" class="btn btn-success submit pull-right">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Actualizar 
+            </button>
+        </div>
+    </form>
+</div>
+</div>
+<script type="text/javascript">
+        $('.submit').bind("click",function(e){
+            var hayErrores = validateForm(e);
+            if (!hayErrores){
+                $("#form_alta").submit();//submit if form has no errors
+            }
+        });
+</script>

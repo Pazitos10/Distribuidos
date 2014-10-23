@@ -40,3 +40,7 @@ hr.message-inner-separator
     margin-left: 20%;
     width: 650px;
 }
+
+img {
+    display: inline-block;
+}
