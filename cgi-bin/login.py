@@ -1,35 +1,52 @@
 #!/usr/bin/python
-# -*- coding: utf-8 -*-
 
+def coincide(usuario1, usuario2):
+    #guardarEnArchivo("log.txt", "Comparando...\n%s vs \n%s"%(usuario1, usuario2))
+    return usuario1["nombre"] == usuario2["nombre"] and usuario1["palabraClave"] == usuario2["palabraClave"]
 
-import os, fcntl, sys
-from ej4 import parsear, limpiar
+def crear_y_guardarSession(alumno):
+    '''
+        Retorna el hash md5 en base a los datos del alumno y un timestamp
+        Escribe los datos referentes a la sesion en un archivo
+    '''
+    import md5
+    from utiles import guardarEnArchivo
+    from time import time
+    str_alumno = str(alumno) #convertimos alumno (diccionario) en String
+    str_timestamp = str(time()) #obtenemos timestamp 
+    sessionHash = md5.new(str_alumno+str_timestamp).hexdigest() #creamos el md5 en base al String str_alumno
+    sessionInfo = {str(sessionHash) : alumno }
+    guardarEnArchivo("sesionesTemp.txt", sessionInfo)
 
-CHATFNAME = "chat.txt"
-MAXLINE = 500
+# Import modules for CGI handling 
+import cgi, cgitb 
+cgitb.enable()
+form = cgi.FieldStorage() 
 
-def main():
+#from login import main_login
+from utiles import buscarEnArchivo
+# Create instance of FieldStorage 
 
-    print "Content-type: text/plain\n\n"
-    print ""
+# Get data from fields
+nombre = form.getvalue('nombre')
+password  = form.getvalue('palabraClave')
 
-    chatfile = open(CHATFNAME,"r")
-    if not chatfile:
-        print "<p>Error abriendo el archivo<br></p>\n"
-
-    fd = chatfile.fileno()
-    try:
-        fcntl.flock(fd, fcntl.LOCK_EX|fcntl.LOCK_NB) #Bloqueamos el archivo
-    except IOError:
-        print "<p> Error en flock()</p>\n"
-    
-    for l in chatfile.readlines():
-        print "<p>%s</p>" % (l)
-
-    fcntl.flock(fd, fcntl.LOCK_UN) #Desbloqueamos el archivo
-    chatfile.close()
-
-if __name__ == '__main__':
-    main()
-
+print "Content-type:text/html\r\n\r\n"
+print "<html>"
+print "<head>"
+print "<title>Hello - Second CGI Program</title>"
+print "</head>"
+print "<body>"
+usuario = {"nombre": nombre, "palabraClave": password}
+usuarioValido, nroLinea = buscarEnArchivo("usuarios.txt", coincide, usuario)
+if usuarioValido != None:
+    #Guardarlo en sesiones:
+    crear_y_guardarSession(usuarioValido)
+#    print "<h2>Hello %s</h2>" % (usuarioValido)
+    print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/chat.html\"/>"
+else:
+    print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/login.html\"/>"
+print "</body>"
+print "</html>"
+#main_login({'nombre':nombre, 'palabraClave': password})
 
