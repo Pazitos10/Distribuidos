@@ -1,5 +1,5 @@
 {'edad': '23', 'apellido': 'Morales', 'pClave': '1234', 'nombre': 'Leonardo', 'nroLegajo': '5421', 'sexo': 'Masculino'}
-{'edad': '25', 'apellido': 'Perez', 'pClave': '1234', 'nroLegajo': '5432', 'sexo': 'Femenino', 'nombre': 'Maria'}
+{'edad': '25', 'apellido': 'Perez', 'pClave': '1234', 'nombre': 'Maria', 'nroLegajo': '5432', 'sexo': 'Femenino'}
 {'edad': '24', 'apellido': 'Dominguez', 'pClave': '1234', 'nroLegajo': '4587', 'sexo': 'Masculino', 'nombre': 'Emmanuel'}
 {'edad': '45', 'apellido': 'Oporto', 'pClave': '1234', 'nombre': 'Alberto', 'nroLegajo': '1111', 'sexo': 'Masculino'}
 {'edad': '25', 'apellido': 'Parise', 'pClave': '1234', 'nombre': 'Cristian', 'nroLegajo': '4444', 'sexo': 'Masculino'}

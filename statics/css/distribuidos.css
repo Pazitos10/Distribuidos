@@ -60,3 +60,16 @@ img {
     width: 100%;
 }
 .navbar-br {float:none;}
+
+.chat-window{
+    padding-top: 48px;
+    width:549px;
+    min-width: 400px;
+    min-height: auto;
+    margin:0 auto;
+}
+
+.contactos{
+    width:250px;
+    min-width: 250px;
+}

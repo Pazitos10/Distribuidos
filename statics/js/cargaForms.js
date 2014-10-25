@@ -23,9 +23,11 @@ function cargarFormConsultas () {
 function borrarCookie () {
     var sesion = $.cookie('sesion');
     var hay_busqueda = $.cookie('hay_busqueda');
+    var cookieAEliminar = "None";
     var result = true;
     var result_2 = true;
     if (sesion !== undefined) {
+        cookiesAEliminar = sesion
         result = $.removeCookie('sesion', { path: '/' });
     };
     if (hay_busqueda !== undefined) {
@@ -37,4 +39,5 @@ function borrarCookie () {
     else{
         alert('Error al eliminar cookies');
     }
+    $.cookie('eliminar',cookiesAEliminar, {path: '/'});
 }
