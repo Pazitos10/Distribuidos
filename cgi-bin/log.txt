@@ -1,9 +1,2 @@
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
-Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Eliminar cookie: 346f2bbf3b369d58d40bdb3ce3e002b5
+Eliminar cookie: 1596eb672c1a95c7bdd3df9a1e702104

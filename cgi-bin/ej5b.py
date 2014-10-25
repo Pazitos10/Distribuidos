@@ -5,8 +5,11 @@ from urlparse import urlparse, parse_qs
 import os
 import json
 import Cookie
-from ej4 import limpiar, parsear
+from ej4 import limpiar, parsear, convert2Dict
+from ej5 import actualizarHtmlModif
+
 NOMBRE_ARCH = "alumnos.txt"
+SESSION_FILE = "session.txt"
 
 
 def main():
@@ -22,13 +25,17 @@ def main():
         pass
 
     else:
+        log = open('log.txt','a')
         # Creamos una cookie
         cookie = Cookie.SimpleCookie()
         # load() parses the cookie string
         cookie.load(cookie_string)
         # Obtenemos el numero de linea en el cual se encuentra el alumno
         nro_linea = int(cookie['line_number'].value)
-
+        eliminar = cookie['eliminar'].value
+        log.write("Eliminar cookie: "+str(eliminar)+'\n')
+        log.close()
+        eliminarCookies(eliminar)     
         #Llamar a actualizar_linea con el nro de linea y el nuevo contenido:
         actualizar_linea(nro_linea, alumno)
         # Cargamos la cookie con los valores necesarios para mostrar el mensaje de exito.
@@ -37,10 +44,31 @@ def main():
         salida(nro_linea, alumno, cookie)
 
 
+#Elimina la cookie de sesion correspondiente
+def eliminarCookies(sesionID):
+    from ast import literal_eval
+    arch_sesion = open('session.txt','a+')
+    sesiones = arch_sesion.readlines()
+    arch_sesion.close()
+    for i,s in enumerate(sesiones):
+        sAux = s
+        sAux = sAux[:-1]
+        sesion = literal_eval(sAux)
+        if sesion.has_key(sesionID): #es la linea
+            sesiones.pop(i) #eliminamos la sesion
+            actualizarSesiones(sesiones)
+
+def actualizarSesiones(sesiones):
+    arch_sesion = open('session.txt','w')
+    for s in sesiones:
+        arch_sesion.write(s)
+    arch_sesion.close()
+
 def actualizar_linea(nro_linea, alumno):
     from tempfile import mkstemp
     from shutil import move
     from os import remove, close
+
 
     #Create temp file
     fh, abs_path = mkstemp()
@@ -61,10 +89,13 @@ def actualizar_linea(nro_linea, alumno):
     move(abs_path, NOMBRE_ARCH)
 
 def salida(nro_linea, alumno, cookie):
+
+    actualizarHtmlModif(alumno)
+
     print cookie
     print "Content-type:text/html\r\n\r\n"
     print ""
-    print "<meta http-equiv=\"refresh\" content=\"5;url=../html/base.html\" />" #muestra el mensaje durante 5 segundos y redirige
+    print "<meta http-equiv=\"refresh\" content=\"3;url=../html/base.html\" />" #muestra el mensaje durante 3 segundos y redirige
     print open('/var/www/html/base.html').read()
 
 if __name__ == '__main__':
