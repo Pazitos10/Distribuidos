@@ -13,7 +13,7 @@ def main():
     print "Content-type: text/plain\n\n"
     print ""
 
-    print "<html><head></head><body>"
+    #print "<html><head></head><body>"
     
     query_string = os.getenv('QUERY_STRING')
     chatfile = open(CHATFNAME,"a+")
@@ -26,16 +26,16 @@ def main():
     except IOError:
         print "<p> Error en flock()</p>\n"
     
-    for l in chatfile.readlines():
-        print l
+    #for l in chatfile.readlines():
+    #    print l
 
     news = limpiar(parsear(query_string)) #Lo nuevo es lo parseado de query_string
     news = news['newtxt'] #obtenemos el valor de adentro del diccionario
-    chatfile.write(news)
-    print "<p>%s</p>" % (news)
+    chatfile.write(news+'\n')
+    #print "<p>%s</p>" % (news)
     fcntl.flock(fd, fcntl.LOCK_UN) #Desbloqueamos el archivo
     chatfile.close()
-    print "</body></html>"
+    #print "</body></html>"
 
 if __name__ == '__main__':
     main()

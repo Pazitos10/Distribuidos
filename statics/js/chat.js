@@ -11,14 +11,14 @@ function getReqObj() {
 function submitHandler(txtID, divID) 
 {
     var theText = document.getElementById(txtID);
-    var theArea = document.getElementById(divID);
+    //var theArea = document.getElementById(divID);
     var reqObj = getReqObj();
 
     var url="../cgi-bin/cgiChatServer.py?newtxt=" + escape("<p>" + theText.value + "</p>");
     reqObj.open("GET", url, false);
     reqObj.send(null); 
-    theArea.innerHTML = unescape(reqObj.responseText);
-    theArea.scrollTop = theArea.scrollHeight;
+    //theArea.innerHTML = unescape(reqObj.responseText);
+    //theArea.scrollTop = theArea.scrollHeight;
     theText.value = "";
     return false;
 }
@@ -35,12 +35,19 @@ $(document).ready(function(){
 function refreshChat () {
     var theArea = document.getElementById('targetDiv');
     var reqObj = getReqObj();
+    var elTextoDelChat;
+    var leido = $.cookie('leido');
     
-    var url="../cgi-bin/otro.py";
+    var url="../cgi-bin/otro.py?leido="+leido;
     reqObj.open("GET", url,false);
-    reqObj.send(null); 
-    theArea.innerHTML = unescape(reqObj.responseText);
-    theArea.scrollTop = theArea.scrollHeight;
+    reqObj.send(null);
+    elTextoDelChat = unescape(reqObj.responseText);
+    if (elTextoDelChat != "") {
+
+        theArea.innerHTML += elTextoDelChat;
+        theArea.scrollTop = theArea.scrollHeight;
+        
+    } 
     return false;
 
 }

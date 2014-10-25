@@ -30,7 +30,10 @@ from utiles import buscarEnArchivo
 # Get data from fields
 nombre = form.getvalue('nombre')
 password  = form.getvalue('palabraClave')
-
+#import Cookie
+#cookie = Cookie.SimpleCookie()
+#cookie['line_number'] = 0
+#print cookie
 print "Content-type:text/html\r\n\r\n"
 print "<html>"
 print "<head>"
@@ -43,6 +46,7 @@ if usuarioValido != None:
     #Guardarlo en sesiones:
     crear_y_guardarSession(usuarioValido)
 #    print "<h2>Hello %s</h2>" % (usuarioValido)
+    print "<meta http-equiv=\"Set-Cookie\" content=\"leido=0; path=/; expires=null\" >"
     print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/chat.html\"/>"
 else:
     print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/login.html\"/>"
