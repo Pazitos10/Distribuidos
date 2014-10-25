@@ -1,0 +1,2 @@
+{'f076e4a6d426a8749331f345e97b7f6a': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+{'d3e70221f57e4886c18e319a701c6f95': {'nombre': 'Bruno', 'palabraClave': '1234'}}

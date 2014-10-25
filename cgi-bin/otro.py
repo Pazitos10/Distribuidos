@@ -12,18 +12,11 @@ CHATFNAME = "chat.txt"
 MAXLINE = 500
 
 def main():
+    #Recuperar la cookie para saber la linea a actualizar:
     query_string = os.getenv('QUERY_STRING')
     cookie_en_parametros = limpiar(parsear(query_string)) #Lo nuevo es lo parseado de query_string
     leido = int(cookie_en_parametros['leido']) #obtenemos el valor de adentro del diccionario
     
-    #Recuperar la cookie para saber la linea a actualizar:
-    # cookie_string = os.environ.get('HTTP_COOKIE')
-    # #Crear un objeto cookie
-    # cookie = Cookie.SimpleCookie()
-    # # load() parses the cookie string
-    # cookie.load(cookie_string)
-    # # Obtenemos el numero de linea del chat desde la que solicita
-    # nro_linea = int(cookie['leido'].value)
     nro_linea = leido
     guardarEnArchivo("log.txt", "RECUPERANDO LINEA DE LA COOKIE: %d"%nro_linea)
     chatfile = open(CHATFNAME,"r")

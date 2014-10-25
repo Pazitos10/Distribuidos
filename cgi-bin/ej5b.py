@@ -35,7 +35,7 @@ def main():
         eliminar = cookie['eliminar'].value
         log.write("Eliminar cookie: "+str(eliminar)+'\n')
         log.close()
-        eliminarCookies(eliminar)     
+        eliminarCookies(SESSION_FILE, eliminar)     
         #Llamar a actualizar_linea con el nro de linea y el nuevo contenido:
         actualizar_linea(nro_linea, alumno)
         # Cargamos la cookie con los valores necesarios para mostrar el mensaje de exito.
@@ -45,9 +45,9 @@ def main():
 
 
 #Elimina la cookie de sesion correspondiente
-def eliminarCookies(sesionID):
+def eliminarCookies(nombreArch, sesionID):
     from ast import literal_eval
-    arch_sesion = open('session.txt','a+')
+    arch_sesion = open(nombreArch,'a+')
     sesiones = arch_sesion.readlines()
     arch_sesion.close()
     for i,s in enumerate(sesiones):
@@ -56,10 +56,10 @@ def eliminarCookies(sesionID):
         sesion = literal_eval(sAux)
         if sesion.has_key(sesionID): #es la linea
             sesiones.pop(i) #eliminamos la sesion
-            actualizarSesiones(sesiones)
+            actualizarSesiones(nombreArch, sesiones)
 
-def actualizarSesiones(sesiones):
-    arch_sesion = open('session.txt','w')
+def actualizarSesiones(nombreArch, sesiones):
+    arch_sesion = open(nombreArch,'w')
     for s in sesiones:
         arch_sesion.write(s)
     arch_sesion.close()

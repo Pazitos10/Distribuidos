@@ -17,6 +17,7 @@ def crear_y_guardarSession(alumno):
     sessionHash = md5.new(str_alumno+str_timestamp).hexdigest() #creamos el md5 en base al String str_alumno
     sessionInfo = {str(sessionHash) : alumno }
     guardarEnArchivo("sesionesTemp.txt", sessionInfo)
+    return sessionHash
 
 # Import modules for CGI handling 
 import cgi, cgitb 
@@ -44,9 +45,8 @@ usuario = {"nombre": nombre, "palabraClave": password}
 usuarioValido, nroLinea = buscarEnArchivo("usuarios.txt", coincide, usuario)
 if usuarioValido != None:
     #Guardarlo en sesiones:
-    crear_y_guardarSession(usuarioValido)
-#    print "<h2>Hello %s</h2>" % (usuarioValido)
     print "<meta http-equiv=\"Set-Cookie\" content=\"leido=0; path=/; expires=null\" >"
+    print "<meta http-equiv=\"Set-Cookie\" content=\"sessionHash = %s; path=/; expires=null\" >" % crear_y_guardarSession(usuarioValido)
     print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/chat.html\"/>"
 else:
     print "<meta http-equiv=\"Refresh\" content=\"0;  url=../html/login.html\"/>"

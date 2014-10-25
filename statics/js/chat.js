@@ -29,7 +29,9 @@ window.onload=function()
 } 
 
 $(document).ready(function(){
+    $('#btn-cerrar-sesion').click(logout);
     setInterval("refreshChat()",1000);
+    setInterval("refreshUsuarios()",2000);
 });
 
 function refreshChat () {
@@ -50,4 +52,27 @@ function refreshChat () {
     } 
     return false;
 
+}
+function refreshUsuarios () {
+    var areaUsuarios = document.getElementById('contact-list');
+    var reqObj = getReqObj();
+    var elTextoQueTieneALosUsuarios;
+
+    //var url="../cgi-bin/refreshContactList.py?sessionHash="+sessionHash;
+    var url="../cgi-bin/refreshContactList.py";
+    reqObj.open("GET", url,false);
+    reqObj.send(null);
+    elTextoQueTieneALosUsuarios = unescape(reqObj.responseText);
+    areaUsuarios.innerHTML = elTextoQueTieneALosUsuarios;
+    areaUsuarios.scrollTop = areaUsuarios.scrollHeight;
+    return false;
+
+}
+
+
+
+function logout () {
+    var sessionHash = $.cookie('sessionHash');
+    window.location.href = "../cgi-bin/logout.py?sessionHash="+sessionHash;
+    
 }
