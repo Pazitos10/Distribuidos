@@ -23,8 +23,15 @@ function submitHandler(txtID, divID)
     return false;
 }
 //---------------------------------------------------------------
+function cleanCookie()
+{
+    $.cookie('leido', 0);
+    
+}
+
 window.onload=function()
 {
+    cleanCookie();
     document.forms[0][0].focus();
 } 
 
