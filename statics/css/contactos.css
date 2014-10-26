@@ -85,10 +85,11 @@ ul.c-controls li a:hover {
 .estado {
   width: 10px;
   height: 35px;
-  background-color: #0AC700;
+  /*background-color: #0AC700;*/
+  background-color: #0EAB4D;
   margin-top: 2px;
   border-radius: 10%;
-  /* width and height can be anything, as long as they're equal */
+  
 }
 
 .item{

@@ -2,22 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Chat v2</title>
     <link rel="stylesheet" href="../statics/css/bootstrap.css">
     <link rel="stylesheet" href="../statics/css/distribuidos.css">
     <link rel="stylesheet" href="../statics/css/contactos.css">
+    <link rel="stylesheet" href="../statics/css/chatv2.css">
     <script src="../statics/js/jquery-1.11.0.min.js"></script> 
     <script src="../statics/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="../statics/js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="../statics/js/chat.js"></script>
+    <script src="../statics/js/moment-with-locales.min.js"></script>
     <script src="../statics/js/bootstrap.js"></script>
+    <script src="../statics/js/chatv2.js"></script>
     <script src="../statics/js/contactos.js"></script>
-    <title>Chat!</title>
-</head> 
+</head>
 <body>
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-              <a class="navbar-brand" href="chat.html">Chat Sistemas Distribuidos</a>
+              <a class="navbar-brand" href="chatV2.html">Chat Sistemas Distribuidos</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -26,6 +28,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </div><!-- navbar -->
+
 
     <div class="col-lg-5">
         <div class="contact-list">
@@ -58,13 +61,30 @@
             </div>
         </div>
     </div><!-- lista de contactos -->
-    
-    <div class="chat-window col-lg-7">
-        <div id="targetDiv"></div>
-        <br><br>
-        <form name="forinput" onsubmit="return submitHandler('usrText', 'targetDiv')">
-            <input type="text" id="usrText" style="width:600px"> 
-        </form>
+
+
+    <div class="col-lg-7 chat-window" >
+        <div class="panel panel-default panel-2" style="height:400px;width:600px">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-comment"></span> Chat V2
+            </div>
+            <div class="panel-body">
+                <ul class="chat" >
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <form name="forinput" onsubmit="return submitHandler('btn-input', 'targetDiv')">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <!-- <input type="text" id="usrText" style="width:600px">  -->
+                        <span class="input-group-btn">
+                            <button class="btn btn-warning btn-sm" id="btn-chat">
+                                Enviar</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div><!-- ventana de chat -->
 </body>
 </html>
