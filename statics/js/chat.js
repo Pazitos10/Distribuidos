@@ -31,9 +31,15 @@ function cleanCookie()
 
 window.onload=function()
 {
-    cleanCookie();
+    //cleanCookie();
     document.forms[0][0].focus();
 } 
+
+$(window).unload(function() {
+    //cleanCookie();
+    console.log("Bye now!");
+    $.cookie('leido', 0, {path:'/', expire:null});
+});
 
 $(document).ready(function(){
     $('#btn-cerrar-sesion').click(logout);
