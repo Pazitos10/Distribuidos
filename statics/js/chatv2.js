@@ -50,23 +50,28 @@ function submitHandler(txtID, divID)
     var user =  $.cookie('sessionHash');
     //timeStamp del mensaje p. ej: 26-10-2014 12:36 o 26-10-2014 22:08  
     var timeStamp = moment().format('DD-MM-YYYY HH:mm:ss');
-    console.log(user+'  '+timeStamp);
-
-
+    // console.log(user+'  '+timeStamp);
     var url="../cgi-bin/cgiChatServerV2.py?newtxt=" + escape("<p>" + theText.value + "</p>")+'&user='+String(user)+'&timeStamp='+String(timeStamp);
     
 
-    reqObj.open("GET", url, false);
+    reqObj.open("GET", url , false);
     reqObj.send(null); 
     theText.value = "";
     return false;
 }
 //---------------------------------------------------------------
+
 window.onload=function()
 {
     document.forms[0][0].focus();
-    $.cookie('leido', 0, {path:'/', expire:null});
 } 
+
+$(window).unload(function() {
+    //cleanCookie();
+    console.log("Bye now!");
+    $.cookie('leido', 0, {path:'/', expire:null});
+});
+
 
 $(document).ready(function(){
     $('#btn-cerrar-sesion').click(logout);
@@ -80,7 +85,9 @@ function refreshChat () {
     var elTextoDelChat;
     var leido = $.cookie('leido');
     
-    var url="../cgi-bin/refrescarV2.py?leido="+leido;
+    //var url="../cgi-bin/refrescarV2.py?leido="+leido;
+    var url="../cgi-bin/refrescarV2.py";
+
     reqObj.open("GET", url,false);
     reqObj.send(null);
     elTextoDelChat = unescape(reqObj.responseText);

@@ -1,4 +1,6 @@
-<p>Ehhh :D</p>
-<p>Como va?</p>
-<p>Prueba en sesion 1 ... se supone que esto tiene que persisitir a pesar de que mi sessionHash no exista mas</p>
-<p>Ehhhhhso, prueba en sesion 2, Juncion�! :D</p>
+<p>Hola</p>
+<p>¿Hay alguien aquí?</p>
+<p>¡Que buen chat!</p>
+<p>¿Quienes lo habrán programado?</p>
+<p>askldjaskldjalksdjasdjasdl</p>
+<p>Hola!</p>

@@ -4,3 +4,4 @@
 {'edad': '45', 'apellido': 'Oporto', 'pClave': '1234', 'nombre': 'Alberto', 'nroLegajo': '1111', 'sexo': 'Masculino'}
 {'edad': '25', 'apellido': 'Parise', 'pClave': '1234', 'nombre': 'Cristian', 'nroLegajo': '4444', 'sexo': 'Masculino'}
 {'edad': '22', 'apellido': 'Pazos', 'pClave': '1234', 'nombre': 'Bruno', 'nroLegajo': '5454', 'sexo': 'Masculino'}
+{'edad': '22', 'apellido': 'Raies', 'pClave': '1234', 'nombre': 'Matias', 'nroLegajo': '5437', 'sexo': 'Masculino'}

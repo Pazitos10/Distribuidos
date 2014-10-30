@@ -1,1 +1,2 @@
 {'0bca5c4bcd556fb0244b9d8868a64499': '{"edad": "25", "apellido": "Perez", "pClave": "1234", "nroLegajo": "5432", "sexo": "Femenino", "nombre": "Maria"}'}
+{'bdef91c3b5d1e3cfda09d59ccac37be9': '{"edad": "22", "apellido": "Pazos", "pClave": "1234", "nroLegajo": "5454", "sexo": "Masculino", "nombre": "Bruno"}'}
