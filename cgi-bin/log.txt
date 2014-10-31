@@ -17525,3 +17525,8 @@ Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'6ec84a0444fd3732e68d6a469fa4415e': {'nombre': 'Leonardo', 'palabraClave': '1234'}}

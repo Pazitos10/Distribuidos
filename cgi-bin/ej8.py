@@ -39,10 +39,11 @@ def crearTablaHtml(fc_evaluar, atributo):
         if fc_evaluar(d[atributo]):
         #if funcionEdad("")[0](d[atributo]):
             result.append("<tr><td>{nombre}</td><td>{apellido}</td><td>{sexo}</td><td>{edad}</td><td>{nroLegajo}</td></tr>".format(**d))
-
+    
+    cantResults = len(result)
     tablaHtml = "".join(result)
     #print "RESULTADO: %s\nTIPO: %s" %(tabla, type(tabla))
-    return tablaHtml
+    return cantResults, tablaHtml
 
 
 def mayorQue(valorComparacionFijo, valorVariable):
@@ -170,8 +171,8 @@ def main():
     print ""
     func_evaluadora, atributo = determinarConsulta(query)
     archivo_resultados = open("/var/www/html/resultadosCargados.html","w")
-    resultados = crearTablaHtml(func_evaluadora, atributo)
-    archivo_resultados.write((open("/var/www/html/resultados.html").read()) % (resultados))
+    resultados, tabla = crearTablaHtml(func_evaluadora, atributo)
+    archivo_resultados.write((open("/var/www/html/resultados.html").read()) % (resultados, tabla))
     archivo_resultados.close()
     #print open("/var/www/html/resultadosCargados.html").read()
     
