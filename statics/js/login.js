@@ -1,4 +1,13 @@
 $(document).ready(function() {
+	var sessionHash = $.cookie('sessionHash');
+    if (sessionHash === undefined || sessionHash === 'undefined') {
+        var nada = "";
+    }
+    else{
+    	alert("Usuario logueado!");
+    	window.location.href = "../cgi-bin/loginV2.py";
+    };
+
     $(document).mousemove(function(event) {
         TweenLite.to($("body"), 
         .5, {
@@ -9,3 +18,4 @@ $(document).ready(function() {
         })
     })
 })
+t

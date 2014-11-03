@@ -16,6 +16,7 @@ def main():
     eliminarCookies("sesionesTempV2.txt",sessionHash)
     print "Content-type: text/html\n\n"
     print ""
+    print "<meta http-equiv=\"Set-Cookie\" content=\"sessionHash = undefined; path=/; expires=null\" >"
     print "<meta http-equiv=\"refresh\" content=\"0;url=../html/loginV2.html\" />" 
     
 if __name__ == '__main__':

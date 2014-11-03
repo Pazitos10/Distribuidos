@@ -17530,3 +17530,297 @@ Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
 Buscando...<type 'dict'>{'6ec84a0444fd3732e68d6a469fa4415e': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'2d2dbe0ec6bce51d1c3d806fb1f23251': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'c323fce1a671282b7dffbe8d32a55ece': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Session Hash >>> e5a3124e7064d84eabfb69fc90adf43d
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> e5a3124e7064d84eabfb69fc90adf43d
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> 8d2757395face1652bb41a2fd3c15abd
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 051e933292f47750dbf35a154162bf8b
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'6c816952466c671e458df4881fa2a1fd': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'ab1398275e2f477edb72a8cf1cb3d710': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'f2bb28e00646c1c959c78d3458d6d814': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'6c816952466c671e458df4881fa2a1fd': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'ab1398275e2f477edb72a8cf1cb3d710': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'f2bb28e00646c1c959c78d3458d6d814': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> f2bb28e00646c1c959c78d3458d6d814
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'6c816952466c671e458df4881fa2a1fd': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'ab1398275e2f477edb72a8cf1cb3d710': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'f2bb28e00646c1c959c78d3458d6d814': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> f2bb28e00646c1c959c78d3458d6d814
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'a7dba76375847ce8f6e3cf33ebacd4a7': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'051e933292f47750dbf35a154162bf8b': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'6c816952466c671e458df4881fa2a1fd': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'ab1398275e2f477edb72a8cf1cb3d710': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'f2bb28e00646c1c959c78d3458d6d814': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'806677480232451bd125ba2ced4be729': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 806677480232451bd125ba2ced4be729
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> 9819c9ff8e36662dc7a0a24e60aee178
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'5d63072a8fde5ce07d0bd49c5258e9c8': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'5d63072a8fde5ce07d0bd49c5258e9c8': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 5d63072a8fde5ce07d0bd49c5258e9c8
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 5d63072a8fde5ce07d0bd49c5258e9c8
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 5d63072a8fde5ce07d0bd49c5258e9c8
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 5d63072a8fde5ce07d0bd49c5258e9c8
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 5d63072a8fde5ce07d0bd49c5258e9c8
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 20f204880f1f7d9ce4a787442ace4dc6
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> fd88fc8248faeda79d8151ae090e5a1f
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> fd88fc8248faeda79d8151ae090e5a1f
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> d0b2875eb8084328071fd639da07e41d
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 4202d4d66b47349c048f648bb12381cb
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 4202d4d66b47349c048f648bb12381cb
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'dcca25494682ac9d4ca62a2cd1b5d08d': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> e699778d4d5d49bedf6ce64f58807d05
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'d46bd50fc8fcd8fb1818cadd9f971204': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'752f7ea3590b79699daf69d628c77ac5': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> 004b899ea9e919aab4857c411f940e3c
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> 004b899ea9e919aab4857c411f940e3c
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Session Hash >>> 
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'c223bbdfd7d2b41af8ede7eb4699394d': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'c223bbdfd7d2b41af8ede7eb4699394d': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'c223bbdfd7d2b41af8ede7eb4699394d': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> c223bbdfd7d2b41af8ede7eb4699394d
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'c223bbdfd7d2b41af8ede7eb4699394d': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> undefined
+Buscando...<type 'dict'>{'nombre': 'Bruno', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'nombre': 'Leonardo', 'palabraClave': '1234'}
+Buscando...<type 'dict'>{'9819c9ff8e36662dc7a0a24e60aee178': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'998aa8f5774e4601c5f4873651e362dc': {'nombre': 'Bruno', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'004b899ea9e919aab4857c411f940e3c': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Buscando...<type 'dict'>{'7ce647b27db8da85d33b5dd9649950ba': {'nombre': 'Leonardo', 'palabraClave': '1234'}}
+Session Hash >>> 7ce647b27db8da85d33b5dd9649950ba

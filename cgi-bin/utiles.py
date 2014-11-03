@@ -18,6 +18,10 @@ def buscarEnArchivo(nombreDelArchivo, fcComparacion, elementoBuscado):
 
         {<<cockieId>>: {'Edad': '23', 'apellido': 'Morales', 'pClave': '1234', 'nombre': 'Leonardo', 'nroLegajo': '5421', 'sexo': 'Masculino'}}
 
+    La fcComparacion debe comparar unalineadelarchivoconvertidaendiccionario con el elementoBuscado.
+    En caso de +exito retorna el objeto encontrado y el numero de linea donde fue encontrado.
+    En caso de -exito retorna None,None    
+
     """
 
     archi=open(nombreDelArchivo,'r')

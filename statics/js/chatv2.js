@@ -72,12 +72,19 @@ $(window).unload(function() {
     $.cookie('leido', 0, {path:'/', expire:null});
 });
 
-
 $(document).ready(function(){
     $('#btn-cerrar-sesion').click(logout);
     setInterval("refreshChat()",1000);
     setInterval("refreshUsuarios()",2000);
 });
+
+var inFormOrLink;
+$('a').on('click', function() { inFormOrLink = true; });
+$('form').on('submit', function() { inFormOrLink = true; });
+
+$(window).on("beforeunload", function() { 
+    return inFormOrLink ? "Do you really want to close?" : console.log("Ahora se podria borrar la sesion del archivo"); 
+})
 
 function refreshChat () {
     var theArea = $('.chat');
@@ -120,5 +127,5 @@ function refreshUsuarios () {
 function logout () {
     var sessionHash = $.cookie('sessionHash');
     window.location.href = "../cgi-bin/logoutV2.py?sessionHash="+sessionHash;
-    
+    $.cookie('sessionHash', undefined, {path:'/', expire:null}); 
 }

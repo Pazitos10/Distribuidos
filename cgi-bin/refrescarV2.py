@@ -23,9 +23,12 @@ def main():
     #leido = int(cookie_en_parametros['leido']) #obtenemos el valor de adentro del diccionario
 
     cookie_string = os.environ.get('HTTP_COOKIE')
-    cookie = Cookie.SimpleCookie()
-    cookie.load(cookie_string)
-    leido = int(cookie['leido'].value)
+    if cookie_string:
+        cookie = Cookie.SimpleCookie()
+        cookie.load(cookie_string)
+        leido = int(cookie['leido'].value)
+    else:
+        leido = 0
     
     nro_linea = leido
     chatfile = open(CHATFNAME,"r")
